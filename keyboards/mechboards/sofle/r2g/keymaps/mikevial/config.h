@@ -16,3 +16,8 @@
 // RP2040 flash-backed storage for the expanded keymap and Vial features.
 #define WEAR_LEVELING_LOGICAL_SIZE 8192
 #define WEAR_LEVELING_BACKING_SIZE 16384
+
+// Custom LCD UI (display.c): mods and WPM are shown on whichever half is the slave.
+#define SPLIT_MODS_ENABLE
+#define SPLIT_WPM_ENABLE
+#define QUANTUM_PAINTER_NUM_IMAGES 16
