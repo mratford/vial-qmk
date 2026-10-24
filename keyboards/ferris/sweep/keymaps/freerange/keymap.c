@@ -15,11 +15,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_X,           KC_P,           KC_D,           KC_G,           KC_V},
         {KC_U,           KC_N,           KC_T,           KC_S,           KC_M},
         {LGUI_T(KC_Z),   LALT_T(KC_W),   LCTL_T(KC_B),   LSFT_T(KC_C),   KC_F},
-        {LT(4,KC_ESC),   LT(2,KC_BSPC),  KC_NO,          KC_NO,          KC_NO},
+        {LT(4,KC_ESC),   MO(2),          KC_NO,          KC_NO,          KC_NO},
         {KC_K,           KC_L,           KC_I,           KC_O,           KC_QUOT},
         {KC_COMM,        KC_R,           KC_E,           KC_A,           KC_UNDS},
         {KC_J,           RSFT_T(KC_H),   RCTL_T(KC_Y),   RALT_T(KC_DOT), RGUI_T(KC_Q)},
-        {LT(1,KC_SPC),   LT(3,KC_ENT),   KC_NO,          KC_NO,          KC_NO},
+        {LT(1,KC_SPC),   LT(3,KC_TAB),   KC_NO,          KC_NO,          KC_NO},
     },
 
     // SYM - hold Space
@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_TRNS,    KC_TRNS,    KC_NO,      KC_NO,      KC_NO},
     },
 
-    // NAV - hold Backspace
+    // NAV - hold the left home thumb
     [2] = {
         {QK_LAYER_LOCK,       KC_VOLD,             KC_MUTE,             KC_VOLU,             KC_MPLY},
         {KC_LGUI,             KC_LALT,             KC_LCTL,             KC_LSFT,             KC_TAB},
@@ -43,10 +43,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {LALT(KC_BSPC),       KC_PGDN,             KC_PGUP,             KC_DEL,              KC_HOME},
         {KC_LEFT,             KC_DOWN,             KC_UP,               KC_RGHT,             KC_END},
         {SGUI(KC_LBRC),       LCTL(LSFT(KC_LBRC)), LCTL(LSFT(KC_RBRC)), SGUI(KC_RBRC),       LGUI(KC_GRV)},
-        {KC_TRNS,             KC_TRNS,             KC_NO,               KC_NO,               KC_NO},
+        {KC_BSPC,             KC_ENT,              KC_NO,               KC_NO,               KC_NO},
     },
 
-    // STACK - hold Enter
+    // STACK - hold Tab
     [3] = {
         {QK_BOOT,       MEH(KC_P),     MEH(KC_N),     OSM(MOD_MEH),  OSM(MOD_HYPR)},
         {QK_MACRO_4,    LCTL(KC_B),    QK_MACRO_2,    QK_MACRO_3,    QK_MACRO_5},
@@ -86,7 +86,6 @@ void eeconfig_init_user(void) {   // blank controller, or EEPROM cleared
 
 static void seed_vial_defaults(void) {
     static const vial_combo_entry_t combos[] = {
-        {{ KC_G, KC_V, KC_NO, KC_NO }, KC_TAB},
         {{ LSFT_T(KC_C), RSFT_T(KC_H), KC_NO, KC_NO }, QK_CAPS_WORD_TOGGLE},
     };
     for (uint8_t i = 0; i < sizeof(combos) / sizeof(combos[0]); i++) dynamic_keymap_set_combo(i, &combos[i]);
