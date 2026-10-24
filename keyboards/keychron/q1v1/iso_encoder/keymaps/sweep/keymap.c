@@ -12,11 +12,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // BASE
     [0] = {
         {KC_ESC,          KC_NO,           KC_BRID,         KC_BRIU,         KC_NO,           KC_NO,           RGB_VAD,         RGB_VAI,         KC_MPRV,         KC_MPLY,         KC_MNXT,         KC_MUTE,         KC_VOLD,         KC_VOLU,         KC_MUTE},
-        {KC_GRV,          KC_1,            KC_2,            KC_3,            KC_4,            KC_5,            KC_6,            KC_7,            KC_8,            KC_9,            KC_0,            KC_MINS,         KC_EQL,          KC_BSPC,         KC_PGUP},
-        {KC_TAB,          KC_Q,            KC_W,            KC_E,            KC_R,            KC_T,            KC_Y,            KC_U,            KC_I,            KC_O,            KC_P,            KC_LBRC,         KC_RBRC,         KC_ENT,          KC_PGDN},
-        {KC_CAPS,         KC_A,            KC_S,            KC_D,            KC_F,            KC_G,            KC_H,            KC_J,            KC_K,            KC_L,            KC_UNDS,         KC_QUOT,         KC_UP,           KC_NUHS,         KC_HOME},
-        {KC_LSFT,         KC_NUBS,         LALT_T(KC_Z),    LGUI_T(KC_X),    LCTL_T(KC_C),    LSFT_T(KC_V),    KC_B,            KC_N,            RSFT_T(KC_M),    RCTL_T(KC_COMM), RGUI_T(KC_DOT),  RALT_T(KC_QUOT), KC_DOWN,         KC_RSFT,         KC_DEL},
-        {KC_LCTL,         KC_ESC,          LT(2,KC_BSPC),   KC_NO,           KC_NO,           KC_NO,           LT(1,KC_SPC),    KC_NO,           KC_NO,           KC_NO,           LT(3,KC_ENT),    KC_NO,           KC_RCTL,         KC_LEFT,         KC_RGHT},
+        {HYPR_T(KC_GRV),  KC_1,            KC_2,            KC_3,            KC_4,            KC_5,            KC_6,            KC_7,            KC_8,            KC_9,            KC_0,            KC_MINS,         KC_EQL,          KC_BSPC,         KC_PGUP},
+        {MEH_T(KC_TAB),   KC_Q,            KC_W,            KC_E,            KC_R,            KC_T,            KC_Y,            KC_U,            KC_I,            KC_O,            KC_P,            KC_LBRC,         KC_RBRC,         KC_ENT,          KC_PGDN},
+        {LT(2,KC_ESC),    KC_A,            KC_S,            KC_D,            KC_F,            KC_G,            KC_H,            KC_J,            KC_K,            KC_L,            KC_UNDS,         KC_QUOT,         KC_UP,           LT(3,KC_NUHS),   KC_HOME},
+        {KC_LSFT,         KC_NUBS,         LGUI_T(KC_Z),    LALT_T(KC_X),    LCTL_T(KC_C),    LSFT_T(KC_V),    KC_B,            KC_N,            RSFT_T(KC_M),    RCTL_T(KC_COMM), RALT_T(KC_DOT),  RGUI_T(KC_QUOT), KC_DOWN,         KC_RSFT,         KC_DEL},
+        {KC_LCTL,         KC_LALT,         KC_LGUI,         KC_NO,           KC_NO,           KC_NO,           LT(1,KC_SPC),    KC_NO,           KC_NO,           KC_NO,           KC_RGUI,         KC_NO,           KC_RCTL,         KC_LEFT,         KC_RGHT},
     },
 
     // SYM - hold Space
@@ -29,17 +29,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_NO,      KC_NO,      KC_NO,      KC_TRNS,    KC_NO,      KC_NO,      KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS},
     },
 
-    // NAV - hold Backspace
+    // NAV - hold Caps Lock
     [2] = {
-        {KC_TRNS,             KC_NO,               KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS},
-        {KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS},
-        {KC_TRNS,             QK_LAYER_LOCK,       KC_VOLD,             KC_MUTE,             KC_VOLU,             KC_MPLY,             LALT(KC_BSPC),       KC_PGDN,             KC_PGUP,             KC_DEL,              KC_HOME,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS},
-        {KC_TRNS,             KC_LALT,             KC_LGUI,             KC_LCTL,             KC_LSFT,             KC_TAB,              KC_LEFT,             KC_DOWN,             KC_UP,               KC_RGHT,             KC_END,              KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS},
-        {KC_TRNS,             KC_TRNS,             SGUI(KC_Z),          LGUI(KC_Z),          LGUI(KC_C),          LGUI(KC_V),          LGUI(KC_X),          SGUI(KC_LBRC),       LCTL(LSFT(KC_LBRC)), LCTL(LSFT(KC_RBRC)), SGUI(KC_RBRC),       LGUI(KC_GRV),        KC_TRNS,             KC_TRNS,             KC_TRNS},
-        {KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_NO,               KC_NO,               KC_NO,               KC_TRNS,             KC_NO,               KC_NO,               KC_NO,               KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS},
+        {KC_TRNS, KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS},
+        {KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS},
+        {KC_TRNS, KC_NO,   KC_UP,   KC_NO,   KC_VOLD, KC_VOLU, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_DEL,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS},
+        {KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_MUTE, KC_MPLY, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS},
+        {KC_TRNS, KC_TRNS, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO,   KC_NO,   KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_TRNS, KC_TRNS, KC_TRNS},
+        {KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS},
     },
 
-    // STACK - hold Enter
+    // STACK - hold backslash
     [3] = {
         {KC_TRNS,       KC_NO,         KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS},
         {KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS},
