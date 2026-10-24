@@ -472,6 +472,7 @@
                 "custom": {"type": "boolean"},
                 "custom_lite": {"type": "boolean"},
                 "ghost": {"type": "boolean"},
+                "masked": {"type": "boolean"},
                 "input_pressed_state": {"$ref": "./definitions.jsonschema#/unsigned_int"},
                 "io_delay": {"$ref": "./definitions.jsonschema#/unsigned_int"},
                 "direct": {
@@ -815,6 +816,7 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "masked": {"type": "boolean"},
                         "right": {
                             "type": "object",
                             "additionalProperties": false,
