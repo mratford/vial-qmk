@@ -82,12 +82,10 @@ void eeconfig_init_user(void) {   // blank controller, or EEPROM cleared
 
 static void seed_vial_defaults(void) {
     static const vial_combo_entry_t combos[] = {
-        {{ KC_Y, KC_U, KC_NO, KC_NO }, KC_TAB},
         {{ KC_J, KC_K, KC_NO, KC_NO }, KC_ESC},
         {{ LSFT_T(KC_V), RSFT_T(KC_M), KC_NO, KC_NO }, QK_CAPS_WORD_TOGGLE},
         {{ KC_J, KC_L, KC_NO, KC_NO }, KC_ENT},
         {{ KC_K, KC_L, KC_NO, KC_NO }, KC_BSPC},
-        {{ KC_H, KC_K, KC_NO, KC_NO }, KC_TAB},
     };
     for (uint8_t i = 0; i < sizeof(combos) / sizeof(combos[0]); i++) dynamic_keymap_set_combo(i, &combos[i]);
 
