@@ -14,11 +14,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = {
         {KC_Q,            KC_W,            KC_E,            KC_R,            KC_T},
         {KC_A,            KC_S,            KC_D,            KC_F,            KC_G},
-        {LALT_T(KC_Z),    LGUI_T(KC_X),    LCTL_T(KC_C),    LSFT_T(KC_V),    KC_B},
+        {LGUI_T(KC_Z),    LALT_T(KC_X),    LCTL_T(KC_C),    LSFT_T(KC_V),    KC_B},
         {LT(4,KC_ESC),    LT(2,KC_BSPC),   KC_NO,           KC_NO,           KC_NO},
         {KC_Y,            KC_U,            KC_I,            KC_O,            KC_P},
         {KC_H,            KC_J,            KC_K,            KC_L,            KC_UNDS},
-        {KC_N,            RSFT_T(KC_M),    RCTL_T(KC_COMM), RGUI_T(KC_DOT),  RALT_T(KC_QUOT)},
+        {KC_N,            RSFT_T(KC_M),    RCTL_T(KC_COMM), RALT_T(KC_DOT),  RGUI_T(KC_QUOT)},
         {LT(1,KC_SPC),    LT(3,KC_ENT),    KC_NO,           KC_NO,           KC_NO},
     },
 
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // NAV - hold Backspace
     [2] = {
         {QK_LAYER_LOCK,       KC_VOLD,             KC_MUTE,             KC_VOLU,             KC_MPLY},
-        {KC_LALT,             KC_LGUI,             KC_LCTL,             KC_LSFT,             KC_TAB},
+        {KC_LGUI,             KC_LALT,             KC_LCTL,             KC_LSFT,             KC_TAB},
         {SGUI(KC_Z),          LGUI(KC_Z),          LGUI(KC_C),          LGUI(KC_V),          LGUI(KC_X)},
         {KC_TRNS,             KC_TRNS,             KC_NO,               KC_NO,               KC_NO},
         {LALT(KC_BSPC),       KC_PGDN,             KC_PGUP,             KC_DEL,              KC_HOME},
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [4] = {
         {QK_LAYER_LOCK, KC_DLR,        LALT(KC_3),    KC_COLN,       KC_EQL},
         {KC_LBRC,       KC_RBRC,       KC_LPRN,       KC_RPRN,       KC_COMM},
-        {KC_LALT,       KC_LGUI,       KC_LCTL,       KC_LSFT,       MEH(KC_NO)},
+        {KC_LGUI,       KC_LALT,       KC_LCTL,       KC_LSFT,       MEH(KC_NO)},
         {KC_TRNS,       KC_TRNS,       KC_NO,         KC_NO,         KC_NO},
         {KC_PLUS,       KC_7,          KC_8,          KC_9,          KC_ASTR},
         {KC_MINS,       KC_4,          KC_5,          KC_6,          KC_SLSH},
@@ -89,6 +89,9 @@ static void seed_vial_defaults(void) {
         {{ KC_Y, KC_U, KC_NO, KC_NO }, KC_TAB},
         {{ KC_J, KC_K, KC_NO, KC_NO }, KC_ESC},
         {{ LSFT_T(KC_V), RSFT_T(KC_M), KC_NO, KC_NO }, QK_CAPS_WORD_TOGGLE},
+        {{ KC_J, KC_L, KC_NO, KC_NO }, KC_ENT},
+        {{ KC_K, KC_L, KC_NO, KC_NO }, KC_BSPC},
+        {{ KC_H, KC_K, KC_NO, KC_NO }, KC_TAB},
     };
     for (uint8_t i = 0; i < sizeof(combos) / sizeof(combos[0]); i++) dynamic_keymap_set_combo(i, &combos[i]);
 

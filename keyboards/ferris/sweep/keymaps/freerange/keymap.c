@@ -14,11 +14,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = {
         {KC_X,           KC_P,           KC_D,           KC_G,           KC_V},
         {KC_U,           KC_N,           KC_T,           KC_S,           KC_M},
-        {LALT_T(KC_Z),   LGUI_T(KC_W),   LCTL_T(KC_B),   LSFT_T(KC_C),   KC_F},
+        {LGUI_T(KC_Z),   LALT_T(KC_W),   LCTL_T(KC_B),   LSFT_T(KC_C),   KC_F},
         {LT(4,KC_ESC),   LT(2,KC_BSPC),  KC_NO,          KC_NO,          KC_NO},
         {KC_K,           KC_L,           KC_I,           KC_O,           KC_QUOT},
         {KC_COMM,        KC_R,           KC_E,           KC_A,           KC_UNDS},
-        {KC_J,           RSFT_T(KC_H),   RCTL_T(KC_Y),   RGUI_T(KC_DOT), RALT_T(KC_Q)},
+        {KC_J,           RSFT_T(KC_H),   RCTL_T(KC_Y),   RALT_T(KC_DOT), RGUI_T(KC_Q)},
         {LT(1,KC_SPC),   LT(3,KC_ENT),   KC_NO,          KC_NO,          KC_NO},
     },
 
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // NAV - hold Backspace
     [2] = {
         {QK_LAYER_LOCK,       KC_VOLD,             KC_MUTE,             KC_VOLU,             KC_MPLY},
-        {KC_LALT,             KC_LGUI,             KC_LCTL,             KC_LSFT,             KC_TAB},
+        {KC_LGUI,             KC_LALT,             KC_LCTL,             KC_LSFT,             KC_TAB},
         {SGUI(KC_Z),          LGUI(KC_Z),          LGUI(KC_C),          LGUI(KC_V),          LGUI(KC_X)},
         {KC_TRNS,             KC_TRNS,             KC_NO,               KC_NO,               KC_NO},
         {LALT(KC_BSPC),       KC_PGDN,             KC_PGUP,             KC_DEL,              KC_HOME},
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [4] = {
         {QK_LAYER_LOCK, KC_DLR,        LALT(KC_3),    KC_COLN,       KC_EQL},
         {KC_LBRC,       KC_RBRC,       KC_LPRN,       KC_RPRN,       KC_COMM},
-        {KC_LALT,       KC_LGUI,       KC_LCTL,       KC_LSFT,       MEH(KC_NO)},
+        {KC_LGUI,       KC_LALT,       KC_LCTL,       KC_LSFT,       MEH(KC_NO)},
         {KC_TRNS,       KC_TRNS,       KC_NO,         KC_NO,         KC_NO},
         {KC_PLUS,       KC_7,          KC_8,          KC_9,          KC_ASTR},
         {KC_MINS,       KC_4,          KC_5,          KC_6,          KC_SLSH},
