@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_ESC,          KC_NO,           KC_BRID,         KC_BRIU,         KC_NO,           KC_NO,           RGB_VAD,         RGB_VAI,         KC_MPRV,         KC_MPLY,         KC_MNXT,         KC_MUTE,         KC_VOLD,         KC_VOLU,         KC_MUTE},
         {HYPR_T(KC_GRV),  KC_1,            KC_2,            KC_3,            KC_4,            KC_5,            KC_6,            KC_7,            KC_8,            KC_9,            KC_0,            KC_MINS,         KC_EQL,          KC_BSPC,         KC_PGUP},
         {MEH_T(KC_TAB),   KC_Q,            KC_W,            KC_E,            KC_R,            KC_T,            KC_Y,            KC_U,            KC_I,            KC_O,            KC_P,            KC_LBRC,         KC_RBRC,         KC_ENT,          KC_PGDN},
-        {LT(2,KC_ESC),    KC_A,            KC_S,            KC_D,            KC_F,            KC_G,            KC_H,            KC_J,            KC_K,            KC_L,            KC_UNDS,         KC_QUOT,         KC_UP,           LT(3,KC_NUHS),   KC_HOME},
+        {LT(2,KC_ESC),    KC_A,            KC_S,            KC_D,            KC_F,            KC_G,            KC_H,            KC_J,            KC_K,            KC_L,            KC_UNDS,         LT(3,KC_QUOT),   KC_UP,           KC_NUHS,         KC_HOME},
         {KC_LSFT,         KC_NUBS,         LGUI_T(KC_Z),    LALT_T(KC_X),    LCTL_T(KC_C),    LSFT_T(KC_V),    KC_B,            KC_N,            RSFT_T(KC_M),    RCTL_T(KC_COMM), RALT_T(KC_DOT),  RGUI_T(KC_QUOT), KC_DOWN,         KC_RSFT,         KC_DEL},
         {KC_LCTL,         KC_LALT,         KC_LGUI,         KC_NO,           KC_NO,           KC_NO,           LT(1,KC_SPC),    KC_NO,           KC_NO,           KC_NO,           KC_RGUI,         KC_NO,           KC_RCTL,         KC_LEFT,         KC_RGHT},
     },
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS},
     },
 
-    // STACK - hold backslash
+    // STACK - hold '
     [3] = {
         {KC_TRNS,       KC_NO,         KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS},
         {KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS},
