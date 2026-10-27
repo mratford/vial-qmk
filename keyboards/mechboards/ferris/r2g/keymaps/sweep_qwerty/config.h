@@ -14,6 +14,9 @@
 // RP2040 flash-backed storage for the expanded keymap and Vial features.
 #define WEAR_LEVELING_LOGICAL_SIZE 8192
 #define WEAR_LEVELING_BACKING_SIZE 16384
+#define SPLIT_MODS_ENABLE
+#define SPLIT_TRANSACTION_IDS_USER RPC_ID_SCREEN_STATUS
+#define QUANTUM_PAINTER_NUM_FONTS 8
 
 #define VIAL_KEYBOARD_UID {0xC6, 0x04, 0x05, 0xCA, 0xFB, 0xA8, 0xD3, 0xAA}
 

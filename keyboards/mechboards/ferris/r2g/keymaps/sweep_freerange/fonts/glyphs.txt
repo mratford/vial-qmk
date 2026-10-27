@@ -1,0 +1,2 @@
+£×—‹›←↑→↓↖↘⇞⇟⇥⇧⇪−⌃⌘⌥⌦⌫⏎▶
+{'big': ('DejaVuSansCondensed-Bold.ttf', 16), 'mid': ('DejaVuSansCondensed-Bold.ttf', 11), 'small': ('DejaVuSansCondensed-Bold.ttf', 9), 'cap': ('DejaVuSansCondensed-Bold.ttf', 9), 'title': ('DejaVuSansCondensed-Bold.ttf', 15)}

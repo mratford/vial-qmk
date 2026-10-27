@@ -13,3 +13,5 @@ LAYER_LOCK_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 
 VIALRGB_ENABLE = yes
+SRC += display.c
+SRC += $(addprefix fonts/screen_,$(addsuffix .qff.c,big mid small cap title))
