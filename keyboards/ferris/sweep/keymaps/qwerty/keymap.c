@@ -15,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_Q,            KC_W,            KC_E,            KC_R,            KC_T},
         {KC_A,            KC_S,            KC_D,            KC_F,            KC_G},
         {LGUI_T(KC_Z),    LALT_T(KC_X),    LCTL_T(KC_C),    LSFT_T(KC_V),    KC_B},
-        {LT(4,KC_ESC),    MO(2),           KC_NO,           KC_NO,           KC_NO},
+        {MO(4),           MO(2),           KC_NO,           KC_NO,           KC_NO},
         {KC_Y,            KC_U,            KC_I,            KC_O,            KC_P},
         {KC_H,            KC_J,            KC_K,            KC_L,            KC_UNDS},
         {KC_N,            RSFT_T(KC_M),    RCTL_T(KC_COMM), RALT_T(KC_DOT),  RGUI_T(KC_QUOT)},
@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_AMPR,    KC_AT,      KC_PLUS,    KC_EXLM,    KC_BSLS},
         {KC_DQUO,    KC_COLN,    KC_LBRC,    KC_RBRC,    KC_PIPE},
         {QK_MACRO_0, KC_LT,      KC_GT,      QK_MACRO_1, KC_TILD},
-        {KC_TRNS,    KC_TRNS,    KC_NO,      KC_NO,      KC_NO},
+        {KC_ESC,     KC_TRNS,    KC_NO,      KC_NO,      KC_NO},
         {KC_CIRC,    KC_HASH,    KC_SLSH,    KC_MINS,    KC_GRV},
         {KC_ASTR,    KC_EQL,     KC_LPRN,    KC_RPRN,    KC_SCLN},
         {KC_PERC,    KC_LCBR,    KC_RCBR,    KC_QUES,    KC_DLR},
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_TRNS,       KC_TRNS,       KC_NO,         KC_NO,         KC_NO},
     },
 
-    // NUM - hold Esc
+    // NUM - hold the left outer thumb
     [4] = {
         {QK_LAYER_LOCK, KC_DLR,        LALT(KC_3),    KC_COLN,       KC_EQL},
         {KC_LBRC,       KC_RBRC,       KC_LPRN,       KC_RPRN,       KC_COMM},

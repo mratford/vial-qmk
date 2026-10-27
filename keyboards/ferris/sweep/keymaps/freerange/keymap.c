@@ -15,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_X,           KC_P,           KC_D,           KC_G,           KC_V},
         {KC_U,           KC_N,           KC_T,           KC_S,           KC_M},
         {LGUI_T(KC_Z),   LALT_T(KC_W),   LCTL_T(KC_B),   LSFT_T(KC_C),   KC_F},
-        {LT(4,KC_ESC),   MO(2),          KC_NO,          KC_NO,          KC_NO},
+        {MO(4),          MO(2),          KC_NO,          KC_NO,          KC_NO},
         {KC_K,           KC_L,           KC_I,           KC_O,           KC_QUOT},
         {KC_COMM,        KC_R,           KC_E,           KC_A,           KC_UNDS},
         {KC_J,           RSFT_T(KC_H),   RCTL_T(KC_Y),   RALT_T(KC_DOT), RGUI_T(KC_Q)},
@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_AMPR,    KC_AT,      KC_PLUS,    KC_EXLM,    KC_BSLS},
         {KC_DQUO,    KC_COLN,    KC_LBRC,    KC_RBRC,    KC_PIPE},
         {QK_MACRO_0, KC_LT,      KC_GT,      QK_MACRO_1, KC_TILD},
-        {KC_TRNS,    KC_TRNS,    KC_NO,      KC_NO,      KC_NO},
+        {KC_ESC,     KC_TRNS,    KC_NO,      KC_NO,      KC_NO},
         {KC_CIRC,    KC_HASH,    KC_SLSH,    KC_MINS,    KC_GRV},
         {KC_ASTR,    KC_EQL,     KC_LPRN,    KC_RPRN,    KC_SCLN},
         {KC_PERC,    KC_LCBR,    KC_RCBR,    KC_QUES,    KC_DLR},
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_TRNS,       KC_TRNS,       KC_NO,         KC_NO,         KC_NO},
     },
 
-    // NUM - hold Esc
+    // NUM - hold the left outer thumb
     [4] = {
         {QK_LAYER_LOCK, KC_DLR,        LALT(KC_3),    KC_COLN,       KC_EQL},
         {KC_LBRC,       KC_RBRC,       KC_LPRN,       KC_RPRN,       KC_COMM},
@@ -86,7 +86,10 @@ void eeconfig_init_user(void) {   // blank controller, or EEPROM cleared
 
 static void seed_vial_defaults(void) {
     static const vial_combo_entry_t combos[] = {
+        {{ KC_X, KC_R, KC_NO, KC_NO }, KC_ESC},
         {{ LSFT_T(KC_C), RSFT_T(KC_H), KC_NO, KC_NO }, QK_CAPS_WORD_TOGGLE},
+        {{ KC_G, KC_V, KC_NO, KC_NO }, KC_ENT},
+        {{ KC_U, RCTL_T(KC_Y), KC_NO, KC_NO }, KC_BSPC},
     };
     for (uint8_t i = 0; i < sizeof(combos) / sizeof(combos[0]); i++) dynamic_keymap_set_combo(i, &combos[i]);
 
